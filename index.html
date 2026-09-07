@@ -252,12 +252,13 @@
     <div class="commit">
       <div class="commit-top">
         <div class="commit-title">NJ Transit Rail Forecast</div>
-        <div class="commit-hash">Time Series</div>
+        <div class="commit-hash">time series</div>
       </div>
       <div class="commit-msg">
         Built a full SQL-to-R-to-Power BI pipeline analyzing nine years of NJ Transit's official rail performance data. Forecasted on-time percentage with a backtested ARIMA model in R, then found that 2.64 percentage points of NJ Transit's reported delay trace back to Amtrak-controlled infrastructure rather than NJ Transit itself.
+      </div>
       <div class="commit-meta">
-        <span><span class="tag">SQL</span><span class="tag">R</span><span class="tag">PowerBI</span><span class="tag">TensorFlow</span></span>
+        <span><span class="tag">SQL</span><span class="tag">R</span><span class="tag">Power BI</span><span class="tag">Time Series</span></span>
         <a href="https://github.com/RayanKhan06/njtransit-rail-forecast" target="_blank" rel="noopener">→ repo</a>
       </div>
     </div>
@@ -268,7 +269,7 @@
         <div class="commit-hash">deep RL</div>
       </div>
       <div class="commit-msg">
-        I built a Deep Q-Network agent from scratch in PyTorch to land a lunar module in OpenAI Gymnasium, no RL library shortcuts. That meant writing my own replay buffer, syncing a target network for stable learning, and tuning the reward balance until it consistently stuck the landing.
+        Built a Deep Q-Network agent from scratch in PyTorch to land a lunar module in OpenAI Gymnasium, no RL library shortcuts. That meant writing my own replay buffer, syncing a target network for stable learning, and tuning the reward balance until it consistently stuck the landing.
       </div>
       <div class="commit-meta">
         <span><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Deep Q-Learning</span><span class="tag">Gymnasium</span></span>
@@ -282,7 +283,7 @@
         <div class="commit-hash">generative AI</div>
       </div>
       <div class="commit-msg">
-        I trained a Variational Autoencoder in PyTorch on the full MNIST dataset to generate new handwritten digits from random noise. Getting it to work meant using the reparameterization trick so gradients could flow through the sampling step, and balancing the loss so the model didn't just memorize pixels.
+        Trained a Variational Autoencoder in PyTorch on the full MNIST dataset to generate new handwritten digits from random noise. Getting it to work meant using the reparameterization trick so gradients could flow through the sampling step, and balancing the loss so the model didn't just memorize pixels.
       </div>
       <div class="commit-meta">
         <span><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">VAE</span></span>
@@ -293,12 +294,13 @@
     <div class="commit">
       <div class="commit-top">
         <div class="commit-title">RSA vs. ML-KEM Hybrid File Encryptor</div>
-        <div class="commit-hash">quantum + cryptography</div>
+        <div class="commit-hash">post-quantum crypto</div>
       </div>
       <div class="commit-msg">
         I built two hybrid file encryption CLIs comparing classical RSA-OAEP against NIST's post-quantum ML-KEM-768 as the key-wrapping algorithm, both backed by AES-256-GCM for the actual file contents. Benchmarked both across file sizes from 1 KB to 10 MB: ML-KEM generates keys roughly 1,500-3,500x faster than RSA-4096, at the cost of a larger ciphertext.
+      </div>
       <div class="commit-meta">
-        <span><span class="tag">Python</span><span class="tag">Scapy</span><span class="tag">Quantum Computing</span></span>
+        <span><span class="tag">Python</span><span class="tag">Cryptography</span><span class="tag">Post-Quantum</span></span>
         <a href="https://github.com/RayanKhan06/RSA-vs.-ML-KEM-Encryption" target="_blank" rel="noopener">→ repo</a>
       </div>
     </div>
