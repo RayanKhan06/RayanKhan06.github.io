@@ -238,28 +238,27 @@
     <div class="commit">
       <div class="commit-top">
         <div class="commit-title">RateMyProfessor Analyzer</div>
-        <div class="commit-hash">data + AI</div>
+        <div class="commit-hash">data + stats</div>
       </div>
       <div class="commit-msg">
-        I reverse-engineered RateMyProfessor's internal GraphQL API so you can search any professor by name and school and get their ratings, difficulty scores, and up to 100 reviews, no URL needed. It charts the data with Pandas and Seaborn, then feeds the reviews into Groq's LLaMA 3.3 70B to write a plain-language summary of what students actually think.
+        Started by reverse-engineering RateMyProfessor's internal GraphQL API to pull ratings, difficulty scores, and reviews for any professor, no URL needed, with an LLM-generated summary of what students actually think via Groq's API. Then extended it into a real analysis: batch-scraped 57 NJIT professors across 12 departments and found that department-level rating gaps are mostly a difficulty effect in disguise (r = -0.74), and that review sentiment predicts numeric rating almost perfectly (r = 0.94).
       </div>
       <div class="commit-meta">
-        <span><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Seaborn</span><span class="tag">GraphQL</span><span class="tag">LLaMA 3.3</span></span>
+        <span><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">GraphQL</span><span class="tag">NLP</span></span>
         <a href="https://github.com/RayanKhan06/RMP-Data-Analytics" target="_blank" rel="noopener">→ repo</a>
       </div>
     </div>
 
     <div class="commit">
       <div class="commit-top">
-        <div class="commit-title">Fossil Age Regression</div>
-        <div class="commit-hash">ML</div>
+        <div class="commit-title">NJ Transit Rail Forecast</div>
+        <div class="commit-hash">Time Series</div>
       </div>
       <div class="commit-msg">
-        I trained four regression models to predict a fossil's geological age from taxonomic and geospatial features like species, rock type, and location. After benchmarking Lasso, XGBoost, and two neural networks, I tuned XGBoost with cross-validated random search and cut the RMSE by 90%, landing at R² = 0.990.
-      </div>
+        Built a full SQL-to-R-to-Power BI pipeline analyzing nine years of NJ Transit's official rail performance data. Forecasted on-time percentage with a backtested ARIMA model in R, then found that 2.64 percentage points of NJ Transit's reported delay trace back to Amtrak-controlled infrastructure rather than NJ Transit itself.
       <div class="commit-meta">
-        <span><span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">scikit-learn</span><span class="tag">TensorFlow</span></span>
-        <a href="https://github.com/RayanKhan06/Fossil-Age-Regression-Project" target="_blank" rel="noopener">→ repo</a>
+        <span><span class="tag">SQL</span><span class="tag">R</span><span class="tag">PowerBI</span><span class="tag">TensorFlow</span></span>
+        <a href="https://github.com/RayanKhan06/njtransit-rail-forecast" target="_blank" rel="noopener">→ repo</a>
       </div>
     </div>
 
@@ -293,15 +292,14 @@
 
     <div class="commit">
       <div class="commit-top">
-        <div class="commit-title">Deutsch-Jozsa Algorithm</div>
-        <div class="commit-hash">quantum</div>
+        <div class="commit-title">RSA vs. ML-KEM Hybrid File Encryptor</div>
+        <div class="commit-hash">quantum + cryptography</div>
       </div>
       <div class="commit-msg">
-        I implemented the Deutsch-Jozsa algorithm in Qiskit to show quantum speedup firsthand: classifying a hidden Boolean function in one query, versus many on a classical computer. I built the circuit for any number of qubits and validated it on IBM's noise-aware hardware simulator.
-      </div>
+        I built two hybrid file encryption CLIs comparing classical RSA-OAEP against NIST's post-quantum ML-KEM-768 as the key-wrapping algorithm, both backed by AES-256-GCM for the actual file contents. Benchmarked both across file sizes from 1 KB to 10 MB: ML-KEM generates keys roughly 1,500-3,500x faster than RSA-4096, at the cost of a larger ciphertext.
       <div class="commit-meta">
-        <span><span class="tag">Python</span><span class="tag">Qiskit</span><span class="tag">Quantum Computing</span></span>
-        <a href="https://github.com/RayanKhan06/Deutsch-Jozsa-Algorithm" target="_blank" rel="noopener">→ repo</a>
+        <span><span class="tag">Python</span><span class="tag">Scapy</span><span class="tag">Quantum Computing</span></span>
+        <a href="https://github.com/RayanKhan06/RSA-vs.-ML-KEM-Encryption" target="_blank" rel="noopener">→ repo</a>
       </div>
     </div>
 
