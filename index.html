@@ -237,6 +237,20 @@
 
     <div class="commit">
       <div class="commit-top">
+        <div class="commit-title">Fossil Age Regression Pipeline</div>
+        <div class="commit-hash">MLOps + cloud</div>
+      </div>
+      <div class="commit-msg">
+        Took a fossil-age prediction notebook and rebuilt it into a full MLOps pipeline. Refactored the exploratory code into a modular, config-driven pipeline, tuned an XGBoost regressor with RandomizedSearchCV to raise R² from 0.88 (Lasso) to 0.99 while cutting RMSE by 71%, and tracked every experiment with MLflow. Then took it further: served predictions through a FastAPI endpoint, containerized it with Docker, and provisioned the full deployment (ECR, ECS Fargate, an Application Load Balancer) with Terraform on AWS, confirmed working end to end with a live public endpoint before tearing the infrastructure down to avoid ongoing cost.
+      </div>
+      <div class="commit-meta">
+        <span><span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">MLflow</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Terraform</span><span class="tag">AWS</span></span>
+        <a href="https://github.com/RayanKhan06/Fossil-Age-Regression-Project" target="_blank" rel="noopener">→ repo</a>
+      </div>
+    </div>
+
+    <div class="commit">
+      <div class="commit-top">
         <div class="commit-title">RateMyProfessor Analyzer</div>
         <div class="commit-hash">data + stats</div>
       </div>
